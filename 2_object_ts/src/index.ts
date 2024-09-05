@@ -93,3 +93,15 @@ const product = {
   },
 };
 console.log(product);
+
+type Car = {
+  make: string;
+  model: string;
+  year?: number; // Необязательное свойство
+};
+
+const myCar: Car = {
+  make: "Toyota",
+  model: "Camry",
+};
+console.log(myCar);
