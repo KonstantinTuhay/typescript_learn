@@ -1,2 +1,12 @@
 "use strict";
-const arr = [1, 2, 3, 4, 5];
+const message = 5;
+const messages = ["ab", "b"];
+function printMsg(msg) {
+  if (typeof msg === "string") {
+    console.log(msg.toUpperCase());
+  } else {
+    console.log(msg.toExponential());
+  }
+}
+printMsg(4);
+printMsg("xfs");

@@ -1,3 +1,13 @@
-type ArraOfType<T> = T[];
+const message: number | string = 5;
+const messages: string[] | number[] = ["ab", "b"];
 
-const arr: ArraOfType<number> = [1, 2, 3, 4, 5];
+function printMsg(msg: string | number): void {
+  if (typeof msg === "string") {
+    console.log(msg.toUpperCase());
+  } else {
+    console.log(msg.toExponential());
+  }
+}
+
+printMsg(4);
+printMsg("xfs");
