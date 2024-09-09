@@ -1,10 +1,7 @@
-function printMsg(msg: string | number): void {
-  if (typeof msg === "string") {
-    console.log(msg.toUpperCase());
-  } else {
-    console.log(msg.toExponential());
-  }
+function func<T>(arg: T): T {
+  return arg.length;
 }
 
-printMsg(4);
-printMsg("xfs");
+console.log(func("dsdf"));
+
+type;
